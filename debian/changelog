@@ -1,5 +1,131 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-go.uber-zap (1.26.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * Sync from experimental to unstable.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Anton Gladky <gladk@debian.org>  Sun, 08 Oct 2023 22:10:46 +0200
+
+golang-go.uber-zap (1.26.0-1~exp1) experimental; urgency=medium
+
+  * Team upload
+  * [2490131] New upstream version 1.26.0
+  * [98aceab] Update standards version to 4.6.2, no changes needed.
+  * [bed8376] Apply cme fix dpkg
+
+ -- Anton Gladky <gladk@debian.org>  Sat, 07 Oct 2023 22:47:48 +0200
+
+golang-go.uber-zap (1.23.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 1.23.0
+  * Reorder fields in debian/control and debian/copyright
+  * Change Section from devel to golang
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+  * Use dh-sequence-golang instead of dh-golang and --with=golang
+  * debian/rules: Invoke dh with --builddirectory=_build
+  * Drop -dev package’s unneeded dependency on ${shlibs:Depends}
+  * Mark library package with "Multi-Arch: foreign"
+  * Bump Standards-Version to 4.6.1 (no change)
+  * Update versioned dependencies as per go.mod
+  * Refresh Debian patches
+
+ -- Anthony Fok <foka@debian.org>  Fri, 28 Oct 2022 09:50:49 -0600
+
+golang-go.uber-zap (1.20.0-1) unstable; urgency=medium
+
+  [ Nobuhiro Iwamatsu ]
+  * Team upload.
+  * New upstream release (1.20.0).
+  * Update d/control.
+    - Add golang-github-benbjohnson-clock-dev to Depends and B-D.
+    - Add golang-uber-goleak-dev to Depends and B-D.
+    - Update Standards-Version to 4.6.0.1 (no changes).
+    - Add golang-gopkg-yaml.v2-dev to B-D and Depends.
+    - Add golang-google-grpc-dev to B-D.
+  * Update d/gbp.conf.
+    - Set debian-branch to debian/sid for DEP-14 conformance.
+  * Remove unnecessary d/lintian-overrides.
+  * Update d/watch
+    - Update to version 4.
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Mon, 07 Feb 2022 17:59:58 +0900
+
+golang-go.uber-zap (1.15.0-3) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Nilesh Patra ]
+  * Update own email address .
+
+  [ Aloïs Micard ]
+  * update debian/gitlab-ci.yml (using pkg-go-tools/ci-config).
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Fri, 28 Jan 2022 16:54:33 +0900
+
+golang-go.uber-zap (1.15.0-2) unstable; urgency=medium
+
+  * skip TestSamplerConcurrent (fixes debci)
+
+ -- Nilesh Patra <npatra974@gmail.com>  Thu, 09 Jul 2020 15:12:33 +0530
+
+golang-go.uber-zap (1.15.0-1) unstable; urgency=medium
+
+  [ Andreas Henriksson ]
+  * Revert dropping Files-Excluded from debian/copyright
+
+  [ Nilesh Patra ]
+  * New upstream version 1.15.0
+  * change delta range, so as to fix debci
+  * Remove aviau from uploaders - this was RFA
+
+ -- Nilesh Patra <npatra974@gmail.com>  Tue, 07 Jul 2020 15:22:29 +0530
+
+golang-go.uber-zap (1.14.1-1) unstable; urgency=medium
+
+  * New upstream version 1.14.1 (Closes: #952206)
+  * Refresh patches with new version
+  * Drop compat, switch to debhelper-compat
+  * Add "Rules-Requires-Root:no"
+  * Add upstream/metadata
+  * Add myself to uploaders
+  * Bump standards version to 4.5.0
+  * Disable TestOpen test since it seems to dereference null pointer
+
+ -- Nilesh Patra <npatra974@gmail.com>  Sun, 22 Mar 2020 16:43:28 +0530
+
+golang-go.uber-zap (1.9.1-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Alexandre Viau <aviau@debian.org>  Wed, 21 Nov 2018 14:02:57 -0500
+
+golang-go.uber-zap (1.7.1+git20171031.f85c78b-5) unstable; urgency=medium
+
+  * Team upload.
+  * Vcs-* urls: pkg-go-team -> go-team.
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 05 Feb 2018 23:11:49 -0500
+
+golang-go.uber-zap (1.7.1+git20171031.f85c78b-4) unstable; urgency=medium
+
+  * point Vcs-* urls to salsa.d.o subproject
+
+ -- Alexandre Viau <aviau@debian.org>  Thu, 25 Jan 2018 15:42:39 -0500
+
+golang-go.uber-zap (1.7.1+git20171031.f85c78b-3) unstable; urgency=medium
+
+  * Move to salsa.debian.org
+
+ -- Alexandre Viau <aviau@debian.org>  Fri, 29 Dec 2017 22:26:07 -0500
+
+golang-go.uber-zap (1.7.1+git20171031.f85c78b-2) unstable; urgency=medium
+
+  * Create symlink to uber-go/zap
+
+ -- Alexandre Viau <aviau@debian.org>  Tue, 26 Dec 2017 00:58:35 -0500
+
+golang-go.uber-zap (1.7.1+git20171031.f85c78b-1) unstable; urgency=medium
+
+  * Initial release (Closes: #885286)
+
+ -- Alexandre Viau <aviau@debian.org>  Tue, 26 Dec 2017 00:25:28 -0500

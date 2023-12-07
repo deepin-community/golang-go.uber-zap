@@ -1,0 +1,11 @@
+Description: Skipping vendor test
+--- a/stacktrace_ext_test.go
++++ b/stacktrace_ext_test.go
+@@ -85,6 +85,7 @@
+ }
+ 
+ func TestStacktraceFiltersVendorZap(t *testing.T) {
++	t.Skip()
+ 	// We already have the dependencies downloaded so this should be
+ 	// instant.
+ 	deps := downloadDependencies(t)
