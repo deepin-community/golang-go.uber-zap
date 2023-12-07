@@ -1,0 +1,3 @@
+no-vendor-test.patch
+no-TestOpen-test.patch
+no-TestSamplerConcurrent.patch
